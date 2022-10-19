@@ -3,7 +3,7 @@ import 'Student.dart';
 class subjects{
   String? subject;
   String? teacher;
-  List<student>? _students;
+  List<String>? _students;
   
 
   subjects(this.subject,this.teacher,[this._students]);
@@ -27,18 +27,18 @@ class subjects{
     return teacher;
   }
 
-  void setStudents(List<student> _students){
-    this._students = _students;
+  void setStudents(String _students){
+    this._students!.add(_students);
   }
   
-  List<student>? getStudents(){
-    return _students;
+  void getStudents(){
+    print(_students);
   }
-
+/*
   void addPoint(student Student, double makr){
-    Student.marks = marks!+makr;
+    
   }
-
+*/
 
 
 
